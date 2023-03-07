@@ -20,9 +20,14 @@ const CreatePost = () => {
   const [generatingImg, setgeneratingImg] = useState(false)
   const [loading, setloading] = useState(false)
 
-  const handleSubmit = () => {}
+  const handleSubmit = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value})
+  }
   const handleChange = () => {}
-  const handleSurpriseMe = () => {}
+  const handleSurpriseMe = () => {
+    const randomPrompt = getRandomPrompt(form.prompt)
+    setForm({ ...form, prompt: randomPrompt})
+  }
   const generateImage = () => {}
 
   return (
