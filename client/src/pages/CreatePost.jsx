@@ -7,6 +7,8 @@ import FormField from '../components/FormField'
 
 import { getRandomPrompt } from '../utils'
 
+
+
 const CreatePost = () => {
 
   const navigate = useNavigate()
@@ -24,10 +26,13 @@ const CreatePost = () => {
     setForm({ ...form, [e.target.name]: e.target.value})
   }
   const handleChange = () => {}
+
   const handleSurpriseMe = () => {
-    const randomPrompt = getRandomPrompt(form.prompt)
+     const randomPrompt = getRandomPrompt(form.prompt)
     setForm({ ...form, prompt: randomPrompt})
+    console.log('hello')
   }
+  
   const generateImage = () => {}
 
   return (

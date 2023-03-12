@@ -1,4 +1,5 @@
 import React from 'react'
+import { CreatePost } from '../pages'
 
 const FormField = ({labelName, type, name, placeholder,
    value, handleChange, isSurpriseMe, handleSurpriseMe}) => {
@@ -8,11 +9,12 @@ const FormField = ({labelName, type, name, placeholder,
           <label 
             className='font-medium text-gray-900 text-sm block' 
             htmlFor={name}>
-            {labelName}
+            {labelName}s
           </label>
           {isSurpriseMe && (
             <button type='button'
             onClick={handleSurpriseMe}
+            
             className='bg-[#ECECF1] text-xs font-semibold py-1 px-2
             rounded-[5px] text-black hover: bg-blue'>
               Surprise Me
