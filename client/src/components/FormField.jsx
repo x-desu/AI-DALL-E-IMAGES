@@ -9,7 +9,7 @@ const FormField = ({labelName, type, name, placeholder,
           <label 
             className='font-medium text-gray-900 text-sm block' 
             htmlFor={name}>
-            {labelName}s
+            {labelName}
           </label>
           {isSurpriseMe && (
             <button type='button'
